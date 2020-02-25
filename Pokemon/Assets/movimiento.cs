@@ -46,19 +46,19 @@ public class movimiento : MonoBehaviour
     {
         direccion = Vector2.zero;
         
-         if(input.GetKey(KeyCode.W) || input.GetKey(KeyCode.Down))
+         if(input.GetKey(KeyCode.W) || input.GetKey(KeyCode.UpArrow))
          {
             direccion += Vector2.up;
          }
-         if(input.GetKey(KeyCode.A) || input.GetKey(KeyCode.Down))
+         if(input.GetKey(KeyCode.A) || input.GetKey(KeyCode.LeftArrow))
          {
             direccion += Vector2.left;
          }
-         if(input.GetKey(KeyCode.S) || input.GetKey(KeyCode.Down))
+         if(input.GetKey(KeyCode.S) || input.GetKey(KeyCode.DownArrow))
          {
             direccion += Vector2.down;
          }
-         if(input.GetKey(KeyCode.D) || input.GetKey(KeyCode.Down))
+         if(input.GetKey(KeyCode.D) || input.GetKey(KeyCode.RightArrow))
          {
             direccion += Vector2.right;
          }
