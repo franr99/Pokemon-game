@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 0f399b63ff131814badfe3b5f5e439cc
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/MapaInicio
+    100002: _MapPrfab/MapaInicio/Grid
+    400000: _MapPrfab/MapaInicio/Transform
+    400002: _MapPrfab/MapaInicio/Grid/Transform
+    11400000: _MapPrfab/MapaInicio/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/MapaInicio/Grid/Grid
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles:
+  - Assets/Tiles/General.tsx
+  errors:
+  - 'Missing tileset asset: Tiles/General.tsx'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
