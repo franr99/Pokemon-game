@@ -219,6 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669449283}
   - component: {fileID: 1669449282}
+  - component: {fileID: 1669449284}
   m_Layer: 0
   m_Name: MapaInicio
   m_TagString: Untagged
@@ -290,6 +291,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1669449284
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669449281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.90148807, y: -7.0270867}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 50, y: 50}
+    newSize: {x: 50, y: 50}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.032185, y: 7.8463526}
+  m_EdgeRadius: 0
 --- !u!1 &2119581159
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +401,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2119581163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -446,10 +473,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5786924136980532171, guid: 64299e09f07757d4381d09dedc684c5d,
+    - target: {fileID: 2630590899374798225, guid: 64299e09f07757d4381d09dedc684c5d,
         type: 3}
-      propertyPath: m_Name
-      value: Player
+      propertyPath: velocidad
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5786924136980532160, guid: 64299e09f07757d4381d09dedc684c5d,
         type: 3}
@@ -506,10 +533,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2630590899374798225, guid: 64299e09f07757d4381d09dedc684c5d,
+    - target: {fileID: 5786924136980532166, guid: 64299e09f07757d4381d09dedc684c5d,
         type: 3}
-      propertyPath: velocidad
-      value: 6
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786924136980532166, guid: 64299e09f07757d4381d09dedc684c5d,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786924136980532166, guid: 64299e09f07757d4381d09dedc684c5d,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786924136980532166, guid: 64299e09f07757d4381d09dedc684c5d,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786924136980532166, guid: 64299e09f07757d4381d09dedc684c5d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786924136980532171, guid: 64299e09f07757d4381d09dedc684c5d,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64299e09f07757d4381d09dedc684c5d, type: 3}
@@ -520,11 +572,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7886341839249701050, guid: e774aa83f82c8cd48872cd3e9a001d59,
-        type: 3}
-      propertyPath: m_Name
-      value: MapaInicio
-      objectReference: {fileID: 0}
     - target: {fileID: 7886341839249701048, guid: e774aa83f82c8cd48872cd3e9a001d59,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -579,6 +626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886341839249701050, guid: e774aa83f82c8cd48872cd3e9a001d59,
+        type: 3}
+      propertyPath: m_Name
+      value: MapaInicio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e774aa83f82c8cd48872cd3e9a001d59, type: 3}
